@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kaolaadsdkdemo">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AdSdkDemo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.kaolaadsdkdemo.MainActivity" />
+        <activity android:name="com.kaolaadsdkdemo.Ad2ImageActivity" />
+
+        <!-- 广告音频 service -->
+        <service android:name="com.kaolafm.ad.sdk.core.mediaplayer.MediaService" />
+        <!-- 上报服务 service -->
+        <service android:name="com.kaolafm.ad.sdk.core.statistics.StatisticsService" />
+        <!--广告AppId-->
+        <meta-data
+            android:name="kl_ad_app_id"
+            android:value="91032253a3fc4d7883cc11ec49c832f9" />
+        <!--广告渠道-->
+        <!--<meta-data-->
+        <!--android:name="kl_ad_channel"-->
+        <!--android:value="申请的 渠道ID" />-->
+    </application>
+
+</manifest>

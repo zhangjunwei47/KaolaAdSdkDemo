@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fdfefa">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/feeds_button_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="3dp"
+                    android:text="VERSION 1.1" />
+
+                <Button
+                    android:id="@+id/btnOrigin"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="3dp"
+                    android:text="图片广告(非预加载)" />
+
+                <Button
+                    android:id="@+id/btnOriginPrepare"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="3dp"
+                    android:text="图片广告(预加载)" />
+
+                <Button
+                    android:id="@+id/btnVideoFeed"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="3dp"
+                    android:text="音频广告(预加载)" />
+
+                <Button
+                    android:id="@+id/btnVideoFeedUnPrepare"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="3dp"
+                    android:text="音频广告(非预加载)" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

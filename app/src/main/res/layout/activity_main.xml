@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btnPrepare"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="预加载"
+        android:textSize="30sp" />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="请求下一条音频广告"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp" />
+</LinearLayout>

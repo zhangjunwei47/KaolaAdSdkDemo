@@ -29,6 +29,10 @@
         <!-- 上报服务 service -->
         <service android:name="com.kaolafm.ad.sdk.core.statistics.StatisticsService" />
         <!--广告AppId-->
+		
+		
+		
+		
         <meta-data
             android:name="kl_ad_app_id"
             android:value="91032253a3fc4d7883cc11ec49c832f9" />

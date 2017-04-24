@@ -20,6 +20,8 @@ import com.kaolafm.ad.sdk.core.personal.KlAdSdkLoader;
  * @time: 2016/10/18 16:54
  ******************************************/
 public class AdSdkDemo extends Activity {
+    private static final String VERSION = "1.1.2";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,8 @@ public class AdSdkDemo extends Activity {
         klAdSdkLoader.setAppId("91032253a3fc4d7883cc11ec49c832f9");
         klAdSdkLoader.init(this, Device.DeviceType.APP);
 
+        Button btn_version = (Button) this.findViewById(R.id.btn_version);
+        btn_version.setText("VERSION  " + VERSION);
         Button btnOrigin = (Button) this.findViewById(R.id.btnOrigin);
         btnOrigin.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -28,5 +28,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.alibaba:fastjson:1.1.34.android'
     compile 'com.mcxiaoke.volley:library:1.0.19'
-    compile files('libs/kl_ad_sdk_V1.1.2.jar')
+    compile files('libs/kl_ad_sdk_V1.1.3.jar')
 }

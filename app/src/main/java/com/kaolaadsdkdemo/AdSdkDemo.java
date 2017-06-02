@@ -20,7 +20,7 @@ import com.kaolafm.ad.sdk.core.personal.KlAdSdkLoader;
  * @time: 2016/10/18 16:54
  ******************************************/
 public class AdSdkDemo extends Activity {
-    private static final String VERSION = "1.1.3";
+    private static final String VERSION = "1.1.4";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
